@@ -22,3 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes(['verify'=>true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+
+//Facebook Login Routes
+Route::get('/redirect/{service}','SocialController@redirect');
+
+Route::get('/callback/{service}','SocialController@callback');
+
