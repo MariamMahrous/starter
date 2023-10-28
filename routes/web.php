@@ -28,3 +28,14 @@ Route::get('/redirect/{service}','SocialController@redirect');
 
 Route::get('/callback/{service}','SocialController@callback');
 
+//Crud Opreation
+Route::get('fillable','CrudController@getoffers');
+Route::group(['prefix'=>'offers'],function(){
+  // Route::get('store','CrudController@store');
+   Route::get('create','CrudController@create');
+    Route::post('store','CrudController@store')->name('offers.store');
+
+
+
+
+});

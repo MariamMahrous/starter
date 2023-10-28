@@ -68,7 +68,7 @@
                                 </button>
                             </div>
                             <div class="col-md-6 ">
-                                <a href="{{url('redirect/facebook')}}">Login With FaceBook</a>
+                                <a href="{{url('/redirect/facebook')}}">Login With FaceBook</a>
                             </div>
                         </div>
                     </form>
